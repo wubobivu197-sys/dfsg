@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificação Concluída</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: #ffffff;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 420px;
+        background: rgba(255,255,255,0.08);
+        padding: 35px 25px;
+        border-radius: 25px;
+        backdrop-filter: blur(8px);
+        animation: fadeUp 1s ease;
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .badge {
+        display: inline-block;
+        background: rgba(0,255,170,0.15);
+        color: #00ffb2;
+        padding: 8px 18px;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.06); }
+        100% { transform: scale(1); }
+    }
+
+    h1 {
+        font-size: 34px;
+        margin-bottom: 15px;
+        font-weight: 900;
+        line-height: 1.1;
+    }
+
+    p {
+        font-size: 17px;
+        color: #d9e7ee;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .hint {
+        color: #00ffb2;
+        font-weight: bold;
+        margin-bottom: 10px;
+        animation: blink 1.3s infinite;
+    }
+
+    @keyframes blink {
+        0%,100% { opacity: 1; }
+        50% { opacity: 0.4; }
+    }
+
+    .arrow {
+        font-size: 22px;
+        color: #00ffb2;
+        animation: bounce 1.2s infinite;
+        margin-bottom: 15px;
+    }
+
+    @keyframes bounce {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(8px); }
+        100% { transform: translateY(0); }
+    }
+
+    .btn {
+        display: block;
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        color: #ffffff;
+        text-decoration: none;
+        padding: 18px 0;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 10px 30px rgba(0,114,255,0.5);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        animation: glow 1.6s infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            box-shadow: 0 0 15px rgba(0,114,255,0.4);
+        }
+        to {
+            box-shadow: 0 0 30px rgba(0,198,255,0.9);
+        }
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+    }
+
+    .footer {
+        margin-top: 25px;
+        font-size: 13px;
+        color: #b7d3df;
+    }
+
+    .footer a {
+        color: #b7d3df;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="badge">✔ LINK VERIFICADO</div>
+
+    <h1>Verificação<br>Concluída</h1>
+
+    <p>
+        Sua oferta foi liberada.<br>
+        Clique no botão abaixo para acessar.
+    </p>
+
+    <div class="hint">CLIQUE NO BOTÃO ABAIXO</div>
+    <div class="arrow">▼</div>
+
+    <!-- TROQUE O LINK QUANDO QUISER -->
+    <a href="https://seulink.com" class="btn">
+        ACESSAR AGORA >>
+    </a>
+
+    <div class="footer">
+        Ambiente 100% Seguro e Criptografado<br>
+        <a href="#">Termos</a> | <a href="#">Privacidade</a>
+    </div>
+
+</div>
+
+</body>
+</html>
